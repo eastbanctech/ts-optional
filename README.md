@@ -4,7 +4,7 @@
 Typescript adapted Java [Optional class](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html).
 
 The library barebone is generated with 
-[typescript-library-starter](https://github.com/alexjoverm/typescript-library-starter) (by @alexjover). 
+[typescript-library-starter](https://github.com/alexjoverm/typescript-library-starter). 
 
 ### Usage examples
 ##### Optional instance can be created with:
