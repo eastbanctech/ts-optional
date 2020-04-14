@@ -25,3 +25,25 @@ A pull request name should look like '_[#issue_number] What was done_'
 
 Similar to PR names: '_[#issue_number] What was done_'
 
+### Travis CI
+Build descriptor for the project is '.travis.yml' file.
+ 
+To integrate with the CI: 
+- github [personal access tokens](https://github.com/settings/tokens) should be generated. 
+    - Generated value should be defined in Travis as _GH_TOKEN_ 
+[environment variable](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) for _master_ branch.
+- npm account email should be defined as _NPM_EMAIL_ environment variable for all branches.
+- npm [access tokens](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) should be defined as _NPM_TOKEN_ environment variable for all branches.
+
+### How to release (deploy npm package)
+Travis will deploy all tags: 'Tagged commit' == 'new release'.
+
+Generally [npm version](https://docs.npmjs.com/cli/version) command should be applied.
+
+To make a release:
+1. Checkout _master_ branch.
+2. Run command `npm version patch`
+3. Push changes: ` git push origin HEAD:master --tags`
+
+Will be created a commit with new version number as a message. For example: _'v0.1.0'_.
+Travis will deploy the new version.

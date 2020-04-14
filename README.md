@@ -37,13 +37,3 @@ Automatically tested with Node versions:
 - 11
 - 12
 
-### Travis CI
-To integrate with the CI, github [personal access tokens](https://github.com/settings/tokens) 
-should be generated. 
-Generated value should be defined in Travis as _GH_TOKEN_ 
-To integrate with the CI: 
-- github [personal access tokens](https://github.com/settings/tokens) should be generated. 
-    - Generated value should be defined in Travis as _GH_TOKEN_ 
-[environment variable](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) for _master_ branch.
-- npm account email should be defined as _NPM_EMAIL_ environment variable for all branches.
-- npm [access tokens](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) should be defined as _NPM_TOKEN_ environment variable for all branches.
