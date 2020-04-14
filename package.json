@@ -1,7 +1,7 @@
 {
-  "name": "@itfobos/ts-optional",
+  "name": "@eastbanctech/ts-optional",
   "version": "0.1.0",
-  "description": "",
+  "description": "TS adapted Java Optional class with extra utility classes.",
   "keywords": [
     "typescript",
     "typescript-library",
@@ -18,9 +18,9 @@
   "author": "ILya Turukin <tr.wolfer@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/itfobos/ts-optional"
+    "url": "https://github.com/eastbanctech/ts-optional"
   },
-  "homepage": "https://itfobos.github.io/ts-optional",
+  "homepage": "https://eastbanctech.github.io/ts-optional",
   "license": "MIT",
   "engines": {
     "node": ">=8.0.0"
