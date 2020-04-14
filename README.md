@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/itfobos/ts-optional.svg?branch=master)](https://travis-ci.com/itfobos/ts-optional)
+[![Build Status](https://travis-ci.com/eastbanctech/ts-optional.svg?branch=master)](https://travis-ci.com/eastbanctech/ts-optional)
 
 # TS Optional
 Typescript adapted Java [Optional class](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html).
