@@ -6,6 +6,13 @@ Typescript adapted Java [Optional class](https://docs.oracle.com/javase/8/docs/a
 The library barebone is generated with 
 [typescript-library-starter](https://github.com/alexjoverm/typescript-library-starter). 
 
+### How to install
+`npm i @eastbanctech/ts-optional`
+
+### API documentation
+
+Documentation is available [here](https://eastbanctech.github.io/ts-optional/).
+
 ### Usage examples
 ##### Optional instance can be created with:
 - `Optional.ofNullable(someValue)`
@@ -34,4 +41,9 @@ Automatically tested with Node versions:
 To integrate with the CI, github [personal access tokens](https://github.com/settings/tokens) 
 should be generated. 
 Generated value should be defined in Travis as _GH_TOKEN_ 
+To integrate with the CI: 
+- github [personal access tokens](https://github.com/settings/tokens) should be generated. 
+    - Generated value should be defined in Travis as _GH_TOKEN_ 
 [environment variable](https://docs.travis-ci.com/user/environment-variables/#defining-variables-in-repository-settings) for _master_ branch.
+- npm account email should be defined as _NPM_EMAIL_ environment variable for all branches.
+- npm [access tokens](https://docs.npmjs.com/creating-and-viewing-authentication-tokens) should be defined as _NPM_TOKEN_ environment variable for all branches.
