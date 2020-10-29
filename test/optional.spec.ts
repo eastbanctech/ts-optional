@@ -1,5 +1,5 @@
-import {Optional} from '../src/optional';
-import {nopCallback} from '../src/function-types';
+import { Optional } from '../src/optional';
+import { nopCallback } from '../src/function-types';
 
 describe('Optional', () => {
   const srcValue = 123;
@@ -20,6 +20,12 @@ describe('Optional', () => {
     Optional.of(srcValue).ifPresent(value => expect(value).toBe(srcValue));
   });
 
+  it(`ifPresent doesn't call consumer for empty optional`, () => {
+    const consumerSpy = jasmine.createSpy('consumer');
+    Optional.ofNullable(null).ifPresent(consumerSpy);
+    expect(consumerSpy).not.toHaveBeenCalled();
+  });
+
   it(`ifPresentOrElse passes value to consumer`, () => {
     Optional.of(srcValue).ifPresentOrElse(value => expect(value).toBe(srcValue), nopCallback);
   });
@@ -33,6 +39,12 @@ describe('Optional', () => {
   it(`orElseGet calls producer`, () => {
     const producer = () => 132;
     expect(Optional.ofNullable<number>(null).orElseGet(producer)).toBe(producer());
+  });
+
+  it('orElseGet returns value if the optional is not empty', () => {
+    const srcValue = 127;
+    const producer = () => 132;
+    expect(Optional.of(srcValue).orElseGet(producer)).toBe(srcValue);
   });
 
   it(`An optional equals to itself`, () => {
