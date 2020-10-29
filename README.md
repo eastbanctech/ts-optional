@@ -32,8 +32,9 @@ Documentation is available [here](https://eastbanctech.github.io/ts-optional/).
 
 ### Supported Node versions
 Automatically tested with Node versions:
-- 8
 - 10
 - 11
 - 12
+- 14
+- Latest version
 
