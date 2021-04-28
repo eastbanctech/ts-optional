@@ -1,6 +1,6 @@
 {
   "name": "@eastbanctech/ts-optional",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TS adapted Java Optional class with extra utility classes.",
   "keywords": [
     "typescript",
